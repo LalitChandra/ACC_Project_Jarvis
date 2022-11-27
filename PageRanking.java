@@ -54,19 +54,7 @@ public class PageRanking {
 				//summing the count and adding it to pageMatchCount
 				pageMatchCount.merge(file, 1, Integer::sum);
 		}
-		/*
-		 * for(Map.Entry<String, Integer> entry: pageMatchCount.entrySet()) {
-		 * System.out.println(entry.getKey()+": "+entry.getValue()); }
-		 */
-		/*
-		 * int i=0; while(i<files.length) { String file = files[i]; String filePath =
-		 * "C:\\Users\\david\\Desktop\\WebCrawlerProject-main\\Hoa_To_part\\text\\"+
-		 * file; byte[] readingBytes = Files.readAllBytes(Paths.get(filePath)); String
-		 * text= new String(readingBytes, StandardCharsets.US_ASCII); Pattern
-		 * patternObject = Pattern.compile(input); Matcher matcherObject =
-		 * patternObject.matcher(text); while(matcherObject.find())
-		 * pageMatchCount.merge(file, 1, Integer::sum); i++; }
-		 */
+		
 		
 		//adding the pagematchcount to list for sorting
 		List<Map.Entry<String, Integer>> list = new LinkedList<Map.Entry<String, Integer>>(pageMatchCount.entrySet());
@@ -96,18 +84,7 @@ public class PageRanking {
 		 * break; System.out.println(rank.getKey()+": "+rank.getValue()); i--; }
 		 */
 		System.out.println(pageRankMap);
-//		return pageRankMap;
-		/*
-		 * if(pageMatchCount.size()!=0) { pageRankMap =
-		 * pageMatchCount.entrySet().stream().limit(1) .sorted(Map.Entry.<String,
-		 * Integer>comparingByValue().reversed()).collect(Collectors
-		 * .toMap(Map.Entry::getKey, Map.Entry::getValue, (m1, m2) -> m1,
-		 * LinkedHashMap::new));
-		 * 
-		 * }
-		 * 
-		 * return pageRankMap;
-		 */
+		
 	}
 	//main method for accessing the pageranking class
 	public static void main(String[] args) throws IOException {
