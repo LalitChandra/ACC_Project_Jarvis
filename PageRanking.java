@@ -23,7 +23,6 @@ public class PageRanking {
 		// value
 		Map<String, Integer> pageRankMap = new HashMap<String, Integer>();
 		
-		//table for storing the 
 		Hashtable<String, Integer> pageMatchCount = new Hashtable<>();
 		//String variable holding the directory
 		String currentDirectory = System.getProperty("user.dir");
