@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class FrequencyCount {
 
 	// method for accessing the frequency count
-	public static void frequencycount() {
+	public static void frqcount() {
 
 		StringBuilder stringReturn = new StringBuilder();
 		// File Reading
@@ -71,6 +71,6 @@ public class FrequencyCount {
 	public static void main(String[] args) {
 		
 		//calling the method for accessing frequency
-		frequencycount();
+		frqcount();
 	}
 }
