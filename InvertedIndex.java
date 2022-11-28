@@ -9,7 +9,7 @@ public class InvertedIndex {
 	static ArrayList<String> documents = new ArrayList<String>();
 
 	// method for accessing the inverted indexing
-	public static void fileAccessories() {
+	public static void readFile() {
 
 		// Hashmap for holding the indexes of the the occurrences of word in a particular doc
 		// Word String as key and list of indexes as value
@@ -85,7 +85,7 @@ public class InvertedIndex {
 	public static void main(String[] args) {
 		
 		//calling the fileaccessories method for indexing the files
-		fileAccessories();
+		readFile();
 	}
 
 }
